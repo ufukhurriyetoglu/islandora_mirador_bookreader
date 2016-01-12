@@ -26,7 +26,7 @@ $(function() {
 		var pid = Drupal.settings.islandora_mirador_bookreader.pid;
 		var base_url = Drupal.settings.islandora_mirador_bookreader.base_url;
 		var manifest_url = base_url + "/islandora/object/" + pid + "/datastream/SC/view";
-			
+		/*	
 		// Grab the current object and put it into the beginning of the array
 		// This is to make the Mirador viewer load faster
 		var new_data = []; 
@@ -37,10 +37,11 @@ $(function() {
 				new_data.push(obj); 
 			}
 		});
+		*/
 
 		Mirador({
 			"id": "mirador-bookreader",
-			"data": new_data,
+			"data": data,
 			
 			/* Optional parameters
 			"data":[{ "manifestUri": manifest_url, "location": "University of Toronto"}],
